@@ -103,13 +103,15 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray([a,b,c]) {
+function multiplyArray([d,e,f]) {
   //eslint-disable-line
-  // let first
+  let first = multiply(d, e)[0];
+  let seconed = multiply(first, f)[0];
+  return [seconed,`The numbers ${d},${e},${f} have a product of ${seconed}.`]
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
