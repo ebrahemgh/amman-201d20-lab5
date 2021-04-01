@@ -77,19 +77,18 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 let testArray = [2, 3, 4]; //eslint-disable-line
 
-// function sumArray(sumArr) {
-//   //eslint-disable-line
-//   for (let counter = 0; i <= testArray.length; i++){
-//     let totalarray = sum(testArray[counter], testArray[++counter])[0];
+function sumArray([a,b,c]) {
+  //eslint-disable-line
   
-//   }
-//   return totalarray;
-// }
+  let first = sum(a, b)[0];
+  let seconed = sum(first, c)[0];
+  return [seconed,`${a},${b},${c} was passed in as an array of numbers, and ${seconed} is their sum.`]
+}
 // console.log(sumArray(testArray));
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -104,8 +103,9 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) {
+function multiplyArray([a,b,c]) {
   //eslint-disable-line
+  // let first
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
